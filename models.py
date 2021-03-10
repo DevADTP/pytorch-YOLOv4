@@ -248,7 +248,6 @@ class Neck(nn.Module):
         self.maxpool1 = nn.MaxPool2d(kernel_size=5, stride=1, padding=5 // 2)
         self.maxpool2 = nn.MaxPool2d(kernel_size=9, stride=1, padding=9 // 2)
         self.maxpool3 = nn.MaxPool2d(kernel_size=13, stride=1, padding=13 // 2)
-#ddd
         # R -1 -3 -5 -6
         # SPP
         self.conv4 = Conv_Bn_Activation(2048, 512, 1, 1, 'leaky')
